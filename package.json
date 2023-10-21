@@ -1,0 +1,20 @@
+{
+  "name": "fullstack1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update-server": "npm i --prefix server",
+    "update-client": "yarn install --prefix client",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run watch --prefix server",
+    "test": "npm test --prefix server",
+    "deploy": "npm run start -pm2 --prefix server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

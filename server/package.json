@@ -1,0 +1,33 @@
+{
+  "name": "nasa-api",
+  "version": "1.0.0",
+  "description": "nasa frontend server",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "jest ",
+    "test-watch": "jest --watch",
+    "start": "node ./src/server.js ",
+    "watch": "nodemon ./src/server.js",
+    "start-pm2": "pm2 start ./src/server.js -i max"
+  },
+  "author": "Justice Owusu",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.2.0",
+    "express": "^4.18.1",
+    "fullstack1": "file:..",
+    "jest": "^28.1.2",
+    "mongoose": "^6.4.4",
+    "morgan": "^1.10.0",
+    "pm2": "^5.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18",
+    "supertest": "^6.2.4"
+  }
+}
