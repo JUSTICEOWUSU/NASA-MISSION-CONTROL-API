@@ -1,5 +1,8 @@
 FROM vm/ubuntu:18.04
 
+SECRET ENV NASA_MONGO_PASSW
+RUN echo "secret is: $NASA_MONGO_PASSW"
+
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 RUN sudo npm install npm@6 -g
