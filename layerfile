@@ -1,0 +1,11 @@
+FROM vm/ubuntu:18.04
+
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+RUN sudo apt-get install -y nodejs
+RUN sudo npm install npm@6 -g
+
+
+COPY . .
+RUN npm run install-server
+RUN BACKGROUND npm run server
+EXPOSE WEBSITE http://localhost:3000

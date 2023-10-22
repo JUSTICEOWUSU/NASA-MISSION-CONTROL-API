@@ -15,9 +15,9 @@ app.use(morgan("combined"))
 app.use(express.json());
 app.use("/v1",v1Api);
 
-app.use(express.static(path.join(__dirname,"..","build")));
+app.use(express.static(path.join(__dirname,"..","..","client","build")));
 app.get("/*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"..","build","index.html"))
+    res.sendFile(path.join(__dirname,"..","..","client","build","index.html"))
 });
 
 module.exports = app;

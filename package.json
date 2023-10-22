@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "update-server": "npm i --prefix server",
+    "install-server": "npm install --prefix server",
     "update-client": "yarn install --prefix client",
     "server": "npm start --prefix server",
     "client": "npm start --prefix client",
@@ -14,7 +14,5 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.3.1"
-  }
+  "dependencies": {}
 }
