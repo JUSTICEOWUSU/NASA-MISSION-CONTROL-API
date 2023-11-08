@@ -1,7 +1,7 @@
 {
-  "name": "nasa-api",
+  "name": "NASA-MISSION-CONTROL-API",
   "version": "1.0.0",
-  "description": "nasa frontend server",
+  "description": "NASA-MISSION-CONTROL-API for an already built front end",
   "main": "src/server.js",
   "scripts": {
     "test": "jest ",
