@@ -15,6 +15,10 @@ app.use(morgan("combined"))
 app.use(express.json());
 app.use("/v1",v1Api);
 
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname, "public")));
+app.get("/*", (res, req) => {
+    res.sendFile(express.static(path.join(__dirname, "public","index.html")))
+});
+
 
 module.exports = app;
