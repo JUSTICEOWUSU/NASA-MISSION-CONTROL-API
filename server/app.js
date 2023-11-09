@@ -1,5 +1,5 @@
 const path = require("path");
-const v1Api = require("./routes/apiVersions/apiV1")
+const v1Api = require("./src/routes/apiVersions/apiV1")
 
 const express = require("express");
 const cors = require("cors");

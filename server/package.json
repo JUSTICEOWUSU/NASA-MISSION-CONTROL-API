@@ -6,9 +6,9 @@
   "scripts": {
     "test": "jest ",
     "test-watch": "jest --watch",
-    "start": "node ./src/server.js ",
-    "watch": "nodemon ./src/server.js",
-    "start-pm2": "pm2 start ./src/server.js -i max"
+    "start": "node server.js ",
+    "watch": "nodemon server.js",
+    "start-pm2": "pm2 start server.js -i max"
   },
   "author": "Justice Owusu",
   "license": "ISC",

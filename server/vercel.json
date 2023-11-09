@@ -2,8 +2,8 @@
 {
     "name":"NASA-MISSION-CONTROL",
     "version":2,
-    "builds":[{"src":"./src/server.js","use":"@vercel/node"}],
+    "builds":[{"src":"./server.js","use":"@vercel/node"}],
     "routes": [
-      { "src": "/(.*)", "dest": "./src/server.js" }
+      { "src": "/(.*)", "dest": "./server.js" }
    ]
 }
