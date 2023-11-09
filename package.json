@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "NASA_MISSION_CONTROL API",
   "main": "server.js",
+  "engines": {
+},
   "scripts": {
     "install-server": "npm install --prefix server",
     "update-client": "yarn install --prefix client",
