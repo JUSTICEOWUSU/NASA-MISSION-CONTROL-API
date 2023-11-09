@@ -13,7 +13,7 @@ const app = express();
 app.use(morgan("combined"))
 
 app.use(express.json());
-app.use("/v1",(req,res)=>{
+app.use("/v1/launch",(req,res)=>{
     res.json({"hello":"world"})
 });
 
