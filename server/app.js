@@ -16,7 +16,7 @@ app.use(express.json());
 app.use("/v1",v1Api);
 
 app.use(express.static(path.join(__dirname, "public")));
-app.get("/*", (res, req) => {
+app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "public","index.html"))
 });
 
